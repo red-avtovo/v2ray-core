@@ -396,7 +396,7 @@ func (h *Handler) Process(ctx context.Context, network net.Network, connection i
 				}
 			}
 		} else {
-			return newError(account.ID.String() + " is not able to use " + requestAddons.Flow).AtWarning()
+			return newError(account.ID.String() + " is not able to use the flow" + requestAddons.Flow).AtWarning()
 		}
 	case "":
 	default:
